@@ -22,7 +22,7 @@ loom {
     splitEnvironmentSourceSets()
 
 	mods {
-		"template-mod" {
+		"hammer-mace" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

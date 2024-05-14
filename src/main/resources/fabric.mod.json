@@ -8,11 +8,11 @@
 		"Charlie McLarty"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/CharlieMcLarty/hammer-mace",
+		"sources": "https://github.com/CharlieMcLarty/hammer-mace"
 	},
 	"license": "MIT",
-	"icon": "assets/template-mod/icon.png",
+	"icon": "assets/hammer-mace/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
