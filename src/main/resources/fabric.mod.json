@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "hammer-mace",
+	"version": "${version}",
+	"name": "Hammer Mace",
+	"description": "Allows maces to crack stone",
+	"authors": [
+		"Charlie McLarty"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/template-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cmclarty.HammerMace"
+		]
+	},
+	"mixins": [
+		"hammer-mace.mixins.json",
+		{
+			"config": "hammer-mace.mixins.json",
+			"environment": "server"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/MaceItem": ["com/cmclarty/util/IFracture"]
+		}
+	}
+}
