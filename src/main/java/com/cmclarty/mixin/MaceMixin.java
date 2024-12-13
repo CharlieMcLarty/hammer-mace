@@ -50,7 +50,7 @@ public abstract class MaceMixin extends Item implements IFracture {
 		if (playerEntity != null) {
 			itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
 		}
-		return ActionResult.success(world.isClient);
+		return ActionResult.SUCCESS;
 	}
 
 	@Override
